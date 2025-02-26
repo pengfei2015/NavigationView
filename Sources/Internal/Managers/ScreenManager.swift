@@ -11,11 +11,11 @@
 
 import SwiftUI
 
-class ScreenManager: ObservableObject {
-    @Published var size: CGSize = .init()
-    @Published var safeArea: UIEdgeInsets = .init()
+public class ScreenManager: ObservableObject {
+    @Published public var size: CGSize = .init()
+    @Published public var safeArea: UIEdgeInsets = .init()
 
-    static let shared: ScreenManager = .init()
+    public static let shared: ScreenManager = .init()
     private init() {}
 }
 
